@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registers in CPU</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+    <a href="index.html">Back</a>
+
+    <div class="content">
+        <img class="diagram" width="500" src="images/cpu.jpg" alt="Diagram of the CPU">
+
+        <h3 class="section_header">Program Counter (PC)</h3>
+        <ul class="features">
+            <li>Contains the memory address to the next instruction to be executed.</li>
+            <li>This may be the next instruction in the program or a different one (copied from the CIR) if the current instruction is a branch or jump instruction.</li>
+        </ul>
+
+        <h3 class="section_header">Current Instruction Register (CIR)</h3>
+        <ul class="features">
+            <li>Holds the instruction that is currently being executed.</li>
+            <li>The register will split the instructions into sections: opcode and operand</li>
+            <li>Opcode is the code for the assembly instruction to execute.</li>
+            <li>The opcode will include an addressing mode which defines the manner in which the operand should be handled. This is to differentiate between when the actual data is passed to the operation and when the address of the data is passed in, as
+                well as other situations.</li>
+            <li>Operand is the data that the instruction may interact with.</li>
+        </ul>
+
+        <h3 class="section_header">Memory Address Register (MAR)</h3>
+        <ul class="features">
+            <li>This register stores an address in memory.</li>
+            <li>It may store the address from which to access data/instruction or to write data.</li>
+            <li>Since this register stores a memory address, the size will be defined by the word size of the CPU architecture.
+            </li>
+        </ul>
+
+        <h3 class="section_header">Memory Data Register (MDR)</h3>
+        <ul class="features">
+            <li>This register stores the data received or to be written to memory.</li>
+            <li>The size of this register also depends on the word size of the CPU architecture.</li>
+        </ul>
+
+        <h3 class="section_header">Accumulator</h3>
+        <ul class="features">
+            <li>Is used to store intermediate results for the ALU.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

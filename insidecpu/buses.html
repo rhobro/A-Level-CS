@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Diagram of CPU</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+    <a href="index.html">Back</a>
+
+    <div class="content">
+        <img class="diagram" width="500" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.GKK-6Mei6UwsBHVHXbjxWgHaE8%26pid%3DApi" alt="Buses diagram" />
+
+        <h3 class="section_header">Control Bus</h3>
+        <ul class="features">
+            <li>This is a bidirectional bus.</li>
+            <li>Used to take control of the address and data buses.</li>
+            <li>This prevents conflict between components using the bus.</li>
+            <li>Lines in the control bus include:</li>
+            <ol>
+                <li><i>Bus Request</i> - indicates that a device is requesting the use of the data bus.</li>
+                <li><i>Bus Grant</i> - indicates that the CPU has granted access to the data bus.</li>
+                <li><i>Memory Write</i> - causes data on the data bus to be written into the addressed location.</li>
+                <li><i>Memory Read</i> - causes data from the addressed location to be placed on the data bus.</li>
+                <li><i>Interrupt Request</i> - indicates that a device is requesting access to the CPU.</li>
+                <li><i>Clock</i> - used to synchronise operations.</li>
+            </ol>
+        </ul>
+
+        <h3 class="section_header">Address Bus</h3>
+        <ul class="features">
+            <li>Each word in memory has its own address.</li>
+            <li>This bus transmits the memory address of the words referred to in instructions so that data can be retrieved and sent back to the MDR.</li>
+            <li>Width controlled by architecture word size.</li>
+        </ul>
+
+        <h3 class="section_header">Data Bus</h3>
+        <ul class="features">
+            <li>Bidirectional path for moving data and instructions between different components.</li>
+            <li>Width of this bus is controlled by architecture word size.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

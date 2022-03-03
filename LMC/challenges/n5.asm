@@ -1,0 +1,16 @@
+        LDA TOTAL
+        STA CURRENT
+
+LOOP    LDA CURRENT
+        OUT
+        SUB ONE
+        STA CURRENT
+        BRZ DONE
+        BRA LOOP
+
+DONE    HLT
+
+
+CURRENT DAT
+ONE     DAT 1
+TOTAL   DAT 10

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.section_header {
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+}
+
+ul.features li {
+    font-family: "Roboto", sans-serif;
+}
+
+img.diagram {
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.content {
+    margin: 40px;
+}
+
+ul#menu li {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: "Lato", sans-serif;
+    background-color: white;
+}

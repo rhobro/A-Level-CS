@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="animals">
+    <output-path>$PROJECT_DIR$/out/artifacts/animals</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main" />
+        <option name="convertCss2Bin" value="true" />
+        <option name="description" value="I don't know why I created this.&#10;&#10;Oh wait. A-levels." />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="Animals" />
+        <option name="vendor" value="Rohan Mathew" />
+        <option name="version" value="v1.0.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="animals.jar">
+        <element id="module-output" name="animals" />
+      </element>
+    </root>
+  </artifact>
+</component>

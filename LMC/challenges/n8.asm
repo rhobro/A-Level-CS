@@ -1,0 +1,29 @@
+ATTEMPT LDA I
+        SUB ITERS
+        BRZ RUNOUT
+        LDA I
+        ADD ONE
+        STA I
+
+        INP
+        SUB PIN
+        BRZ SUCCESS
+        LDA CODE_INCORRECT
+        OUT
+        BRA ATTEMPT
+
+SUCCESS LDA CODE_SUCCESS
+        OUT
+        HLT
+
+RUNOUT LDA CODE_RUNOUT
+        OUT
+        HLT
+
+PIN DAT 285
+I DAT
+ITERS DAT 3
+ONE DAT 1
+CODE_RUNOUT DAT -1
+CODE_INCORRECT DAT 9
+CODE_SUCCESS DAT 1
